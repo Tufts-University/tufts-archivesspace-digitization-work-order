@@ -2,7 +2,11 @@
   <%= stylesheet_link_tag "#{AppConfig[:frontend_prefix]}assets/work_order.css" %>
   <%= javascript_include_tag "#{AppConfig[:frontend_prefix]}assets/work_order.js" %>
   <script type="text/template" id="workOrderButtonTemplate">
+<<<<<<< HEAD
     <%= link_to I18n.t("plugins.digitization_work_order.toolbar_button"), {:controller => :work_order, :action => :index, :resource => @resource.uri}, :class => 'dropdown-item' %>
+=======
+    <%= link_to I18n.t("plugins.digitization_work_order.toolbar_button"), {:controller => :work_order, :action => :index, :resource => @resource.uri} %>
+>>>>>>> 8a4601b0ea8439a17df6ec32e8e0761a3bd267dc
   </script>
   <script type="text/template" id="workOrderLoadingTemplate">
     <div class="modal-body" id="workOrderForm">

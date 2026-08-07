@@ -19,6 +19,7 @@ var setupButtonASpace2x = function() {
 };
 
 
+<<<<<<< HEAD
 /* 
   setup the work order toolbar action.
 
@@ -34,6 +35,13 @@ $(document).on("loadedrecordform.aspace", function(event, $container) {
       if (window.location.pathname.indexOf("/resources/") >= 0) {
         setupButtonASpace15();
       }
+=======
+// setup the work order toolbar action
+$(document).on("loadedrecordform.aspace", function(event, $container) {
+  if (typeof(tree) === 'undefined') {
+    if (window.location.pathname.indexOf("/resources/") >= 0) {
+      setupButtonASpace15();
+>>>>>>> 8a4601b0ea8439a17df6ec32e8e0761a3bd267dc
     }
   } else {
     if (tree && tree.current().data('jsonmodel_type') == 'resource') {
